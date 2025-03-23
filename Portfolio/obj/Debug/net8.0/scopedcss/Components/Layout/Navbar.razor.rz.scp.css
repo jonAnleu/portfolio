@@ -1,0 +1,20 @@
+.navbar[b-4svlxg6yiy] {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.nav-list[b-4svlxg6yiy] {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-item[b-4svlxg6yiy] {
+  text-transform: uppercase;
+}
+.nav-link[b-4svlxg6yiy] {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
