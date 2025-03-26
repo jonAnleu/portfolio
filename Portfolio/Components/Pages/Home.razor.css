@@ -1,0 +1,19 @@
+.hero {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .1rem solid whitesmoke;
+}
+
+.content {
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: .1rem solid whitesmoke;
+}
+
+.content-container {
+  border-right: .1rem solid whitesmoke;
+}

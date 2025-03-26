@@ -26,14 +26,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9BYm91dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jonanleu/repos/portfolio/Portfolio/Components/Pages/Error.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9FcnJvci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/jonanleu/repos/portfolio/Portfolio/Components/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/jonanleu/repos/portfolio/Portfolio/Components/Pages/Projects.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Qcm9qZWN0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -57,3 +49,7 @@ build_metadata.AdditionalFiles.CssScope = b-gk0xuebvlm
 [/Users/jonanleu/repos/portfolio/Portfolio/Components/Layout/Navbar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9MYXlvdXQvTmF2YmFyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-4svlxg6yiy
+
+[/Users/jonanleu/repos/portfolio/Portfolio/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50cy9QYWdlcy9Ib21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-b5wf3qkphw

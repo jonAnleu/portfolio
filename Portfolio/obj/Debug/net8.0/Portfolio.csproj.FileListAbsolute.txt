@@ -22,6 +22,7 @@
 /Users/jonanleu/repos/portfolio/Portfolio/obj/Debug/net8.0/scopedcss/Components/Layout/Footer.razor.rz.scp.css
 /Users/jonanleu/repos/portfolio/Portfolio/obj/Debug/net8.0/scopedcss/Components/Layout/MainLayout.razor.rz.scp.css
 /Users/jonanleu/repos/portfolio/Portfolio/obj/Debug/net8.0/scopedcss/Components/Layout/Navbar.razor.rz.scp.css
+/Users/jonanleu/repos/portfolio/Portfolio/obj/Debug/net8.0/scopedcss/Components/Pages/Home.razor.rz.scp.css
 /Users/jonanleu/repos/portfolio/Portfolio/obj/Debug/net8.0/scopedcss/bundle/Portfolio.styles.css
 /Users/jonanleu/repos/portfolio/Portfolio/obj/Debug/net8.0/scopedcss/projectbundle/Portfolio.bundle.scp.css
 /Users/jonanleu/repos/portfolio/Portfolio/obj/Debug/net8.0/Portfolio.dll

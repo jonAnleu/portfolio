@@ -1,0 +1,19 @@
+.hero[b-b5wf3qkphw] {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: .1rem solid whitesmoke;
+}
+
+.content[b-b5wf3qkphw] {
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: .1rem solid whitesmoke;
+}
+
+.content-container[b-b5wf3qkphw] {
+  border-right: .1rem solid whitesmoke;
+}
