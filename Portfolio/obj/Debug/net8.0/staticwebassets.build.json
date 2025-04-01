@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "sFlbZWU0t1huBhopvD7UzDR9fPrD3DHY4RCNHps7/yM=",
+  "Hash": "YB5eCsPanuuXHrBaDZ0/ZffouHcmjb0Q/ExkN3m04Wc=",
   "Source": "Portfolio",
   "BasePath": "_content/Portfolio",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/app.css"
+    },
+    {
+      "Identity": "/Users/jonanleu/repos/portfolio/Portfolio/wwwroot/jon.jpeg",
+      "SourceId": "Portfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/jonanleu/repos/portfolio/Portfolio/wwwroot/",
+      "BasePath": "_content/Portfolio",
+      "RelativePath": "jon.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/jon.jpeg"
     }
   ]
 }

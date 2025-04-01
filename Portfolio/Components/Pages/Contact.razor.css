@@ -1,0 +1,35 @@
+.contact-form{
+  border: 2px solid white;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.alert {
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: cornflowerblue;
+  color: white;
+  border: none;
+}

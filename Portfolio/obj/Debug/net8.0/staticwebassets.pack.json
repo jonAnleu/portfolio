@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets/app.css"
     },
     {
+      "Id": "/Users/jonanleu/repos/portfolio/Portfolio/wwwroot/jon.jpeg",
+      "PackagePath": "staticwebassets/jon.jpeg"
+    },
+    {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Portfolio.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

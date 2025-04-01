@@ -1,0 +1,73 @@
+@page "/contact"
+@using System.ComponentModel.DataAnnotations
+<div class="contact-form">
+    <h3 class="text-center mb-4">Contact Me</h3>
+
+    <EditForm Model="_contactModel" OnValidSubmit="HandleValidSubmit" class="max-width-600 mx-auto">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group mb-3">
+            <label for="name">Full Name</label>
+            <InputText id="name" @bind-Value="_contactModel.Name" class="form-control" />
+            <ValidationMessage For="@(() => _contactModel.Name)" />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="email">Email</label>
+            <InputText id="email" @bind-Value="_contactModel.Email" class="form-control" />
+            <ValidationMessage For="@(() => _contactModel.Email)" />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="subject">Subject (Optional)</label>
+            <InputText id="subject" @bind-Value="_contactModel.Subject" class="form-control" />
+        </div>
+
+        <div class="form-group mb-4">
+            <label for="message">Message</label>
+            <InputTextArea id="message" @bind-Value="_contactModel.Message" class="form-control" rows="5" />
+            <ValidationMessage For="@(() => _contactModel.Message)" />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+
+        @if (!string.IsNullOrEmpty(_statusMessage))
+        {
+            <div class="alert alert-success mt-3">@_statusMessage</div>
+        }
+    </EditForm>
+</div>>
+
+@code {
+    private ContactModel _contactModel = new();
+    private string _statusMessage = "";
+
+    public class ContactModel
+    {
+        [Required(ErrorMessage = "Name is required")]
+        public string Name { get; set; }
+
+        [Required(ErrorMessage = "Email is required")]
+        [EmailAddress(ErrorMessage = "Invalid email format")]
+        public string Email { get; set; }
+
+        public string? Subject { get; set; }
+
+        [Required(ErrorMessage = "Message is required")]
+        public string Message { get; set; }
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        // Simulate form submission (replace with real API call)
+        await Task.Delay(1000);
+
+        _statusMessage = "Thank you! Your message has been sent.";
+        _contactModel = new(); // Reset form
+
+        // Clear success message after 3 seconds
+        await Task.Delay(3000);
+        _statusMessage = "";
+    }
+}
