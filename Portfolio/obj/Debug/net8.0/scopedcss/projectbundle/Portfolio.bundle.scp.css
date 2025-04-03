@@ -49,15 +49,19 @@ footer[b-gk0xuebvlm] {
 }
 /* _content/Portfolio/Components/Pages/Home.razor.rz.scp.css */
 section[b-b5wf3qkphw] {
-  padding: 2rem;
+  padding: 2.5rem;
 }
 .color-blue[b-b5wf3qkphw] {
   color: cornflowerblue;
 }
+
+p[b-b5wf3qkphw] {
+  line-height: 2rem;
+}
 .content[b-b5wf3qkphw]{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .image-container[b-b5wf3qkphw] {
@@ -81,16 +85,21 @@ section[b-b5wf3qkphw] {
   font-size: 3rem;
 }
 
+.icons[b-b5wf3qkphw]{
+  display: flex;
+  gap: 1rem;
+}
 .card[b-b5wf3qkphw]{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
 }
+
 .project-img[b-b5wf3qkphw] {
-  width: 200px;
-  height: 100px;
+  width: 13rem;
+  height: 7rem;
   border: .1rem solid rgb(245, 245, 245, .5);
 
 }

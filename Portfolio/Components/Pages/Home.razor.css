@@ -1,13 +1,17 @@
 section {
-  padding: 2rem;
+  padding: 2.5rem;
 }
 .color-blue {
   color: cornflowerblue;
 }
+
+p {
+  line-height: 2rem;
+}
 .content{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .image-container {
@@ -31,16 +35,21 @@ section {
   font-size: 3rem;
 }
 
+.icons{
+  display: flex;
+  gap: 1rem;
+}
 .card{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 
 }
+
 .project-img {
-  width: 200px;
-  height: 100px;
+  width: 13rem;
+  height: 7rem;
   border: .1rem solid rgb(245, 245, 245, .5);
 
 }
