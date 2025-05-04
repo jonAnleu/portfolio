@@ -1,0 +1,249 @@
+/* Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+
+:root {
+  --dark: hsl(0, 0%, 10%);
+  --light: hsl(0, 0%, 90%);
+  --gray: hsl(0, 0%, 50%);
+  --color: hsl(219, 79%, 65%);
+  --ff: "Inter", sans-serif;
+  --h1: bold 3rem/1.4em var(--ff);
+  --h2: bold 2rem/1.4em var(--ff);
+  --p: 1rem/1.5em var(--ff);
+  --pbold: bold 1rem/1.5em var(--ff);
+  --spacing1: 4px;
+  --spacing2: 8px;
+  --spacing3: 16px;
+  --spacing4: 20px;
+  --spacing5: 40px;
+  --spacing6: 80px;
+  --spacing7: 160px;
+  --transition: 0.3s ease-in-out;
+}
+
+/* Global Styles */
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  text-wrap: balance;
+  font: var(--p);
+  background: var(--dark);
+  color: var(--light);
+}
+section {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+h1 {
+  font: var(--h1);
+}
+h2 {
+  font: var(--h2);
+  margin: var(--spacing2);
+}
+h4 {
+  color: var(--color);
+  margin: var(--spacing2);
+}
+p {
+  font: var(--p);
+  margin: var(--spacing2);
+}
+a {
+  font: var(--pbold);
+  color: var(--light);
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; 
+  height: 2px; 
+  background-color: var(--color); 
+  transform: scaleX(0); 
+  transition: transform 0.3s ease; 
+}
+a:hover::before {
+  transform: scaleX(1); /* Make the underline visible on hover */
+}
+a:hover, .link-hover {
+  color: var(--light);
+  transition: var(--transition);
+}
+.btn, button {
+  all: unset;
+  display: inline-block;
+  margin: var(--spacing2) 0;
+  background: var(--color);
+  padding: var(--spacing2) var(--spacing4);
+  color: var(--light);
+  border: solid 1px, var(--light);
+  border-radius: var(--spacing2);
+  font: var(--p);
+  cursor: pointer;
+}
+.btn:hover, button:hover {
+  border-bottom: solid var(--spacing2) var(--light);
+  border-right: solid var(--spacing2) var(--light);
+  border-top:solid var(--spacing2) var(--light);
+  border-left: solid var(--spacing2) var(--light);
+  transition: var(--transition);
+}
+img {
+  width: 100%;
+}
+
+/* Utility Classes */
+.color {
+  color: var(--color);
+}
+.light {
+  color: var(--light);
+}
+.dark {
+  color: var(--dark);
+}
+.gray {
+  color: var(--gray);
+}
+.pbold {
+  font: var(--pbold);
+}
+.center {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing4);
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.padding1 {
+  padding: var(--spacing1) 0;
+}
+.padding2 {
+  padding: var(--spacing2) 0;
+}
+.padding3 {
+  padding: var(--spacing3) 0;
+}
+.padding4 {
+  padding: var(--spacing4) 0;
+}
+.padding5 {
+  padding: var(--spacing5) 0;
+}
+.padding6 {
+  padding: var(--spacing6) 0;
+}
+.padding7 {
+  padding: var(--spacing7) 0;
+}
+.margin1 {
+  margin: var(--spacing1) auto;
+}
+.margin2 {
+  margin: var(--spacing2) auto;
+}
+.margin3 {
+  margin: var(--spacing3) auto;
+}
+.margin4 {
+  margin: var(--spacing4) auto;
+}
+.margin5 {
+  margin: var(--spacing5) auto;
+}
+.margin6 {
+  margin: var(--spacing6) auto;
+}
+.margin7 {
+  margin: var(--spacing7) auto;
+}
+
+/* Header */
+header {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: var(--spacing4) 0;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing5);
+}
+.burger {
+  display: none;
+  width: 20px;
+  color: var(--light)
+}
+@media(max-width: 800px) {
+  .burger {
+    display: block;
+    margin: var(--spacing2);
+  }
+  .burger:hover {
+    color: var(--color);
+    transition: (--transition);
+    cursor: pointer;
+  }
+  nav {
+    display: none;
+  }
+  nav.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--spacing6);
+    right: 0px;
+    background: var(--gray);
+    padding: var(--spacing4);
+    gap: var(--spacing4);
+    border-radius: var(--spacing2);
+  }
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid var(--color) var(--spacing1);
+}
+img {
+  width: 200px;
+  height: 270px;
+  border-radius: var(--spacing2);
+  border: solid var(--color) var(--spacing1);
+  object-fit: cover;
+}
+/* Responsive: Adjusts for smaller screens */
+@media (max-width: 800px) {
+  .column {
+    flex-direction: column;
+  }
+}
