@@ -19,19 +19,19 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <p class="center pbold">J</p>
+      <div class=" flex logo">
+        <p class="pbold ">J</p>
       </div>
       <nav>
-        <a href="">About</a>
-        <a href="">Experience</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button>Resume</button>
       </nav>
-      <i class="fa-solid fa-burger fa-2x burger"></i>
+      <i class="fa-solid fa-burger fa-bounce fa-2x burger"></i>
     </header>
   
-    <section class="flex margin6">
+    <section id="hero" class="flex margin6">
         <div>
           <h4>Hi, my name is</h3>
           <h2>Jon Anleu.</h2>
@@ -41,14 +41,14 @@
           Solutions</a>.</p>
         </div>
     </section>
-    <section class="flex margin6 column">
+    <section id="about" class="flex margin6 column">
         <div>
-          <h2>About Me 👋</h2>
-          <p>Hey there! I'm Jon, and I'm passionate about creating digital experiences. I first
+          <h2 class="color">About Me 👋</h2>
+          <p>Hey! I'm Jon, and I'm passionate about creating digital experiences. I first
             dipped into web development in 2021 while
             building a site for my pop-up business. That hands-on experience not only got me hooked but it also gave me a solid
             foundation in web development.</p>
-          <p>Fast-forward to today, I’m a software engineer intern at <a class="color link-hover"> Raven Solutions</a>, and I develop
+          <p>Fast-forward to today, I’m a software engineer at <a class="color link-hover"> Raven Solutions</a>, and I develop
             accessible digital solutions
             using modern C# and Blazor stacks. My work spans responsive MudBlazor interfaces, SQL/Entity Framework data
             architectures, and AWS cloud integrations—blending technical precision with purposeful design.</p>
@@ -59,9 +59,17 @@
         <img class="circle-img" src="images/headshot.png" alt="">
       </div>
     </section>
+    <section id="projects" class="flex margin6">
+      <h2 class="color">Things I've Built</h2>
+    </section>
     <section></section>
-    <section></section>
-    <section></section>
-    <footer class="center gray">Designed & Built by Jon Anleu</footer>
+    <section id="contact" class="center margin6">
+      <h2 class="color">Get In Touch</h2>
+      <p>Have an interesting idea or opportunity? I’d love to
+        hear about it! My inbox is always open. Whether it’s a quick question, a potential project, or just networking—I’m
+        always up for a conversation.</p>
+        <button>Say Hello</button>
+    </section>
+    <footer class="center gray margin5">Designed & Built by Jon Anleu</footer>
   </body>
 </html>

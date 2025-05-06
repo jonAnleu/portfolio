@@ -13,11 +13,12 @@
   --light: hsl(0, 0%, 90%);
   --gray: hsl(0, 0%, 50%);
   --color: hsl(219, 79%, 65%);
+  --color2: hsl(219, 79%, 50%);
   --ff: "Inter", sans-serif;
   --h1: bold 3rem/1.4em var(--ff);
   --h2: bold 2rem/1.4em var(--ff);
   --p: 1rem/1.5em var(--ff);
-  --pbold: bold 1rem/1.5em var(--ff);
+  --pbold: bold 1.1rem/1.5em var(--ff);
   --spacing1: 4px;
   --spacing2: 8px;
   --spacing3: 16px;
@@ -90,18 +91,20 @@ a:hover, .link-hover {
   display: inline-block;
   margin: var(--spacing2) 0;
   background: var(--color);
-  padding: var(--spacing2) var(--spacing4);
+  padding: var(--spacing1) var(--spacing3);
   color: var(--light);
   border: solid 1px, var(--light);
+  border-bottom: solid var(--spacing1) var(--light);
+  border-right: solid var(--spacing1) var(--light);
   border-radius: var(--spacing2);
-  font: var(--p);
+  font: var(--pbold);
   cursor: pointer;
 }
 .btn:hover, button:hover {
-  border-bottom: solid var(--spacing2) var(--light);
-  border-right: solid var(--spacing2) var(--light);
-  border-top:solid var(--spacing2) var(--light);
-  border-left: solid var(--spacing2) var(--light);
+  border-bottom: solid 1px var(--light);
+  border-right: solid 1px var(--light);
+  border: solid 2px var(--light);
+  background: var(--color2);
   transition: var(--transition);
 }
 img {
@@ -193,6 +196,12 @@ header {
   position: relative;
   padding: var(--spacing4) 0;
 }
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid var(--color) var(--spacing1);
+}
 nav {
   display: flex;
   align-items: center;
@@ -209,7 +218,7 @@ nav {
     margin: var(--spacing2);
   }
   .burger:hover {
-    color: var(--color);
+    color: var(--gray);
     transition: (--transition);
     cursor: pointer;
   }
@@ -227,12 +236,6 @@ nav {
     gap: var(--spacing4);
     border-radius: var(--spacing2);
   }
-}
-.logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: solid var(--color) var(--spacing1);
 }
 img {
   width: 200px;
