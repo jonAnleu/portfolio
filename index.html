@@ -22,18 +22,31 @@
       <div class=" flex logo">
         <p class="j">J</p>
       </div>
-      <nav>
+      <nav class="desktop-nav">
         <a class="underline-link" href="#about">About</a>
         <a class="underline-link" href="#projects">Projects</a>
         <a class="underline-link" href="#contact">Contact</a>
         <button>Resume</button>
       </nav>
-      <i class="fa-solid fa-burger fa-bounce fa-2x burger"></i>
+
+      <label for="menu-toggle" class="burger-menu">
+        <i class="fa-solid fa-bars fa-2x burger"></i>
+      </label>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <nav class="mobile-nav">
+        <ul>
+          <li><a class="burger" href="#">Home</a></li>
+          <li><a class="burger" href="#about">About</a></li>
+          <li><a class="burger" href="#projects">Projects</a></li>
+          <li><a class="burger" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
   
     <section id="hero" class="flex margin6">
         <div>
-          <h4>Hi, my name is</h3>
+          <h4>Hi, my name is</h4>
           <h2>Jon Anleu.</h2>
           <h2 class="gray">I build things for the web.</h2>
           <p>I’m a software engineer specializing in building and designing
@@ -64,9 +77,9 @@
           <p>When I’m not coding or debugging, i'm spending time with my family, biking through the neighborhood, or getting my hands dirty in the garden. 
             </p>
         </div>
-      <div class="img-container">
-        <img class="circle-img" src="images/headshot.png" alt="">
-      </div>
+        <div class="img-container">
+          <img src="images/headshot.png" alt="">
+        </div>
     </section>
 
     <section id="projects" class="flex margin6 column">
@@ -74,7 +87,6 @@
         <div class="project-container"></div>
     </section>
 
-    <section></section>
     <section id="contact" class="center margin6">
       <h2 class="color">Get In Touch</h2>
       <p>Have an interesting idea or opportunity? I’d love to

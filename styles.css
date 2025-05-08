@@ -89,19 +89,18 @@ a:hover {
   background: var(--color);
   padding: var(--spacing1) var(--spacing3);
   color: var(--light);
-  border: solid 1px, var(--light);
-  border-bottom: solid var(--spacing1) var(--light);
-  border-right: solid var(--spacing1) var(--light);
+  border: 2px solid var(--light);
   border-radius: var(--spacing2);
   font: var(--pbold);
   cursor: pointer;
-}
-.btn:hover, button:hover {
-  border-bottom: solid 1px var(--light);
-  border-right: solid 1px var(--light);
-  border: solid 2px var(--light);
-  background: var(--color2);
   transition: var(--transition);
+  box-shadow: 4px 4px 0 var(--light);
+}
+
+.btn:hover, button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--light);
+  background: var(--color2);
 }
 img {
   width: 100%;
@@ -206,10 +205,47 @@ nav {
   align-items: center;
   gap: var(--spacing5);
 }
-.burger {
+.menu-toggle {
   display: none;
-  width: 20px;
-  color: var(--light)
+}
+
+/* Mobile nav - initially hidden */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 80px; /* Adjust based on your header height */
+  left: 0;
+  width: 100%;
+  background: var(--dark);
+  padding: var(--spacing3);
+  z-index: 1000;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.mobile-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing3);
+}
+
+.mobile-nav a {
+  display: block;
+  padding: var(--spacing2) var(--spacing3);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Show menu when checkbox is checked */
+.menu-toggle:checked ~ .mobile-nav {
+  display: block;
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Burger menu styles */
+.burger-menu {
+  display: none;
+  cursor: pointer;
+  padding: var(--spacing2);
 }
 @media(max-width: 800px) {
   .logo {
@@ -221,28 +257,31 @@ nav {
   .j {
     font: var(--pbold);
   }
-  .burger {
-    display: block;
-    margin: var(--spacing2);
-  }
-  .burger:hover {
-    color: var(--color);
-    transition: (--transition);
-    cursor: pointer;
-  }
-  nav {
+  .desktop-nav {
     display: none;
   }
-  nav.show {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: var(--spacing6);
-    right: 0px;
-    background: var(--gray);
-    padding: var(--spacing4);
-    gap: var(--spacing4);
-    border-radius: var(--spacing2);
+ 
+  .burger:hover {
+    color: var(--color);
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .desktop-nav {
+    display: none;
+  }
+}
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -257,7 +296,7 @@ nav {
 }
 .icon:hover {
   color: var(--color);
-  transition: (--transition);
+  transition: var(--transition);
 }
 img {
   width: 200px;
@@ -265,6 +304,7 @@ img {
   border: solid var(--color) var(--spacing1);
   border-radius: var(--spacing2);
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 @media (max-width: 800px) {
   .column {
