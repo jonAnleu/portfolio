@@ -209,17 +209,16 @@ nav {
   display: none;
 }
 
-/* Mobile nav - initially hidden */
+/* Mobile nav  */
 .mobile-nav {
   display: none;
-  position: fixed;
-  top: 80px; /* Adjust based on your header height */
-  left: 0;
-  width: 100%;
+  position: absolute;
+  top: 80px; 
+  right: 0;
+  width: fit-content;
   background: var(--dark);
-  padding: var(--spacing3);
+  padding: var(--spacing2);
   z-index: 1000;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 
 .mobile-nav ul {
@@ -231,8 +230,7 @@ nav {
 
 .mobile-nav a {
   display: block;
-  padding: var(--spacing2) var(--spacing3);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding: var(--spacing1) var(--spacing1);
 }
 
 /* Show menu when checkbox is checked */
@@ -260,7 +258,6 @@ nav {
   .desktop-nav {
     display: none;
   }
- 
   .burger:hover {
     color: var(--color);
     transition: var(--transition);
@@ -284,6 +281,7 @@ nav {
     transform: translateY(0);
   }
 }
+
 
 /* HERO */
 .icon-container {
@@ -313,11 +311,20 @@ img {
 }
 /* PROJECTS */
 .project-container {
-  width: 90%;
-  max-width: 1080px;
-  margin: 0 auto;
-  position: relative;
-  padding: var(--spacing4) 0;
-  border: solid var(--light) var(--spacing1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing4);
+  padding: var(--spacing4);
+}
+
+.project-card {
+  background: rgba(255,255,255,0.1);
+  border: solid var(--spacing1) var(--light);
   border-radius: var(--spacing2);
+  padding: var(--spacing3);
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }

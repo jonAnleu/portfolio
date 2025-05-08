@@ -9,7 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link
       rel="icon"
@@ -19,7 +22,7 @@
   </head>
   <body>
     <header>
-      <div class=" flex logo">
+      <div class="flex logo">
         <p class="j">J</p>
       </div>
       <nav class="desktop-nav">
@@ -36,63 +39,111 @@
 
       <nav class="mobile-nav">
         <ul>
-          <li><a class="burger" href="#">Home</a></li>
-          <li><a class="burger" href="#about">About</a></li>
-          <li><a class="burger" href="#projects">Projects</a></li>
-          <li><a class="burger" href="#contact">Contact</a></li>
+          <li><a class="underline-link" href="#">Home</a></li>
+          <li><a class="underline-link" href="#about">About</a></li>
+          <li><a class="underline-link" href="#projects">Projects</a></li>
+          <li><a class="underline-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
-  
+
     <section id="hero" class="flex margin6">
-        <div>
-          <h4>Hi, my name is</h4>
-          <h2>Jon Anleu.</h2>
-          <h2 class="gray">I build things for the web.</h2>
-          <p>I’m a software engineer specializing in building and designing
-          digital experiences. Currently, I’m focused on building accessible, human-centered products at <a class="color underline-link" href="https://www.raven-solutions.com/" target="_blank">Raven
-          Solutions</a>.</p>
-          <div class="icon-container">
-            <a href="https://github.com/jonAnleu" target="_blank">
-          <i class="fa-brands fa-github fa-2x icon"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jonathan-anleu-562759342/" target="_blank">
-          <i class="fa-brands fa-linkedin fa-2x icon"></i> 
-            </a>
-          </div>
+      <div>
+        <h4>Hi, my name is</h4>
+        <h2>Jon Anleu.</h2>
+        <h2 class="gray">I build things for the web.</h2>
+        <p>
+          I’m a software engineer specializing in building and designing digital
+          experiences. Currently, I’m focused on building accessible,
+          human-centered products at
+          <a
+            class="color underline-link"
+            href="https://www.raven-solutions.com/"
+            target="_blank"
+            >Raven Solutions</a
+          >.
+        </p>
+        <div class="icon-container">
+          <a href="https://github.com/jonAnleu" target="_blank">
+            <i class="fa-brands fa-github fa-2x icon"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jonathan-anleu-562759342/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin fa-2x icon"></i>
+          </a>
         </div>
+      </div>
     </section>
 
     <section id="about" class="flex margin6 column">
-        <div>
-          <h2 class="color">About Me 👋</h2>
-          <p>Hey! I'm Jon, and I'm passionate about creating digital experiences. I first
-            dipped into web development in 2021 while
-            building a site for my pop-up business. That hands-on experience not only got me hooked but it also gave me a solid
-            foundation in web development.</p>
-          <p>Fast-forward to today, I’m a software engineer at <a class="color underline-link" href="https://www.raven-solutions.com/" target="_blank"> Raven Solutions</a>, and I develop
-            accessible digital solutions
-            using modern C# and Blazor stacks. My work spans responsive MudBlazor interfaces, SQL/Entity Framework data
-            architectures, and AWS cloud integrations—blending technical precision with purposeful design.</p>
-          <p>When I’m not coding or debugging, i'm spending time with my family, biking through the neighborhood, or getting my hands dirty in the garden. 
-            </p>
-        </div>
-        <div class="img-container">
-          <img src="images/headshot.png" alt="">
-        </div>
+      <div>
+        <h2 class="color">About Me 👋</h2>
+        <p>
+          Hey! I'm Jon, and I'm passionate about creating digital experiences. I
+          first dipped into web development in 2021 while building a site for my
+          pop-up business. That hands-on experience not only got me hooked but
+          it also gave me a solid foundation in web development.
+        </p>
+        <p>
+          Fast-forward to today, I’m a software engineer at
+          <a
+            class="color underline-link"
+            href="https://www.raven-solutions.com/"
+            target="_blank"
+          >
+            Raven Solutions</a
+          >, and I develop accessible digital solutions using modern C# and
+          Blazor stacks. My work spans responsive MudBlazor interfaces,
+          SQL/Entity Framework data architectures, and AWS cloud
+          integrations—blending technical precision with purposeful design.
+        </p>
+        <p>
+          When I’m not coding or debugging, i'm spending time with my family,
+          biking through the neighborhood, or getting my hands dirty in the
+          garden.
+        </p>
+      </div>
+      <div class="img-container">
+        <img src="images/headshot.png" alt="" />
+      </div>
     </section>
 
     <section id="projects" class="flex margin6 column">
-        <h2 class="color">Things I've Built</h2>
-        <div class="project-container"></div>
+      <h2 class="color">Things I've Built</h2>
+      <div class="project-container">
+        <div class="project-card">
+          <h4>Ecommerce Website</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
+            odit nesciunt, voluptatibus esse distinctio incidunt dolorum
+            pariatur, aut reiciendis voluptates numquam officia veritatis,
+            voluptatum nulla!
+          </p>
+          <div class="icon-container">
+            <a href="https://github.com/jonAnleu" target="_blank">
+              <i class="fa-brands fa-github icon"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jonathan-anleu-562759342/"
+              target="_blank"
+            >
+              <i class="fa-solid fa-folder-open icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="center margin6">
       <h2 class="color">Get In Touch</h2>
-      <p>Have an interesting idea or opportunity? I’d love to
-        hear about it! My inbox is always open. Whether it’s a quick question, a potential project, or just networking—I’m
-        always up for a conversation.</p>
-        <button>Say Hello</button>
+      <p>
+        Have an interesting idea or opportunity? I’d love to hear about it! My
+        inbox is always open. Whether it’s a quick question, a potential
+        project, or just networking—I’m always up for a conversation.
+      </p>
+      <button>Say Hello</button>
     </section>
     <footer class="center gray margin5">Designed & Built by Jon Anleu</footer>
   </body>
