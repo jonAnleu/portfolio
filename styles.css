@@ -313,6 +313,9 @@ img {
   .column {
     flex-direction: column;
   }
+  #about {
+    flex-wrap: wrap;
+  }
 }
 /* PROJECTS */
 .project-container {
