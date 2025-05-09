@@ -8,6 +8,7 @@
 /* Variables */
 :root {
   --dark: hsl(0, 0%, 10%);
+  --darkOpacity: hsla(0, 0%, 10%, .2);
   --light: hsl(0, 0%, 90%);
   --gray: hsl(0, 0%, 50%);
   --color: hsl(219, 79%, 65%);
@@ -133,9 +134,13 @@ img {
   align-items: center;
   justify-content: center;
   gap: var(--spacing4);
+  flex-wrap: wrap;
 }
 .reverse {
   flex-direction: row-reverse;
+}
+.nowrap {
+  flex-wrap: nowrap;
 }
 .padding1 {
   padding: var(--spacing1) 0;
@@ -197,7 +202,7 @@ header {
   border-radius: 50%;
   border: solid var(--color) var(--spacing1);
 }
-.j {
+.logo-icon {
   font: var(--h2);
 }
 nav {
@@ -216,7 +221,7 @@ nav {
   top: 80px; 
   right: 0;
   width: fit-content;
-  background: var(--dark);
+  background: var(--darkOpacity);
   padding: var(--spacing2);
   z-index: 1000;
 }
@@ -252,7 +257,7 @@ nav {
     border-radius: 50%;
     border: solid var(--color) var(--spacing1);
   }
-  .j {
+  .logo-icon {
     font: var(--pbold);
   }
   .desktop-nav {
@@ -311,20 +316,16 @@ img {
 }
 /* PROJECTS */
 .project-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: var(--spacing4);
   padding: var(--spacing4);
 }
-
 .project-card {
-  background: rgba(255,255,255,0.1);
+  background: var(--darkOpacity);
   border: solid var(--spacing1) var(--light);
   border-radius: var(--spacing2);
   padding: var(--spacing3);
   transition: var(--transition);
 }
-
 .project-card:hover {
   transform: translateY(-5px);
 }
